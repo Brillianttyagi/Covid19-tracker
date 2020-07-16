@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/circle.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Grenze+Gotisch&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <h1 style="padding-right:80px;">COVID19-TRACKER</h1>
+            <li>Home</li>
+            <li>State</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">
+        {% for l in td %}
+        <div class="box">
+            <h1 >{{ l.1 }}</h1>
+            <div class="case">
+                <h2 style="font-size: 1.3em;">&quot;Recovery Rate&quot;</h2>
+
+                </div>
+
+                <h2>Active case:{{ l.2 }}</h2>
+                <h2>Total recovered:{{ l.3 }}</h2>
+                <h2>Total death:{{ l.4 }}</h2>
+                <h2>Total Confirmed:{{ l.5 }}</h2>
+            </div>
+            {% endfor %} 
+        </div>
+    </div>
+</body>
+</html>
