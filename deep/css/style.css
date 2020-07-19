@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+body{
+    background-color: rgb(69, 52, 117);
+}
+.menu-bar{
+    background: rgb(86, 36, 224);
+    text-align: center;
+    height: 51px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px rgb(161, 52, 235) solid;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li{
+    width: 140px;
+    margin:6px;
+    padding: 15px;
+    height: 47px;
+    box-sizing: border-box;
+}
+.active, .menu-bar ul li:hover{
+    background:white;
+    color: black;
+    border-radius: 3px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: rgb(211, 192, 192);
+}
+.menu-bar ul li a:hover{
+    color: black;
+}
+.menu-bar h1{
+    font-size: 25px;
+    font-family: 'Fondamento', cursive;
+    width: px;
+    margin:4px;
+    padding: 15px;
+    height: 47px;
+}
+.box
+{
+    width: 280px;
+    height: 450px;
+    margin-top: 50px;
+    background-color: royalblue;
+    float: left;
+    margin-left: 120px;
+    border-radius: 4px;
+    border: rgb(30, 70, 66) solid 2px;
+    text-align: center;
+ 
+}
+
+.box:hover{
+    transform: scale(1.1,1.1);
+    transition: .4s transform;
+  
+}
+.box h1{
+    color: rgb(238, 77, 28);
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box h2{
+    color: silver;
+    font-size: 18px;
+    
+}
+
+.circle1{
+    margin-left: 20px;
+}
